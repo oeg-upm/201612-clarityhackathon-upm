@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clarity eGov pilot</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.png">		 
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/cerulean/bootstrap.min.css" rel="stylesheet"> <!-- flatly, journal, cerulean -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+        <!-- leaflet page http://leafletjs.com/examples/quick-start/ -->
+        
+        <style>
+            #map { height: 300px; }
+        </style>
+    </head>
+    <body onload="inicio()">
+        <div class="container">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+                <div class="page-header">
+                    <h1>Clarity eGov pilot</h1>
+                    <h3>Clarity eGov pilot made by UPM at Dec'16 Sprint</h3>
+                </div>
+                <div class="panel-body">
+
+                    <div id="map"></div>
+                    <div id="test"></div>
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                <hr/>
+                <center> 
+                    <p><small>Made by Universidad Politécnica de Madrid. <a href="http://clarity-csa.eu/">clarity</a> (Open eGovernment Services)</small></p>
+                    <!-- <a href="http://delicias.dia.fi.upm.es/~vrodriguez">Research</a> -->
+                    <p class="muted credit"><small>Contents in this web are offered under a <a rel="license" href="http://purl.org/NET/rdflicense/cc-by4.0">Creative Commons Attribution 4.0 Unported License</a></small></p>
+                </center>
+            </div>
+        </div>
+
+
+        <script>
+            function inicio()
+            {
+                console.log("hola");
+                iniciodatos();
+                
+            }
+            var objeto;
+            function iniciodatos()
+            {
+                var http = new XMLHttpRequest();
+                http.open("POST", "test", true); //true
+                http.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=UTF-8");
+                var params="texto=1"
+                http.send(params);
+                http.onload = function () {
+                    var json = http.responseText;
+                    var obj = JSON.parse(json);
+                    objeto=obj;
+                    var tam = obj.geometry.coordinates.length; 
+                    var str="";
+                    for(i=0;i<tam;i++)
+                    {
+                        str+=obj.geometry.coordinates[i]+"<br/>"
+                    }
+                    document.getElementById("test").innerHTML= str;
+                    iniciomap();
+                }
+            }
+
+            //ZGZ 41.65606 -0.87734
+            function iniciomap()
+            {
+                var map = L.map("map").setView([41.65606, -0.87734], 14);
+                console.log(objeto.type);
+                L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+                var marker1 = L.marker([objeto.geometry.coordinates[0], objeto.geometry.coordinates[1]]).addTo(map);
+                marker1.bindPopup(objeto.properties.name).openPopup();
+            }
+
+        </script>
+    </body>
+</html>
