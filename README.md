@@ -8,8 +8,11 @@ This README would normally document whatever steps are necessary to get your app
 * datos tramites en JSON: https://www.zaragoza.es/sede/servicio/tramite.json
 * datos tramites en JSON-LD: https://www.zaragoza.es/sede/servicio/tramite.jsonld
 * ontologia: https://github.com/opencitydata/sector-publico-servicio
+* seeAlso: https://servicemap.hel.fi/
+* seeAlso: http://standards.esd.org.uk/?uri=list%2FenglishAndWelshServices&tab=details
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
 
 ### How do I get set up? ###
 
