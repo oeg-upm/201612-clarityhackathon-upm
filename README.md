@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-This repository puts together all the work done during the CLARITY project Sprint Week in December 2016 on the work proposed by the Zaragoza city council on the usage of their open dataset (and API) about public services. Our aim has been to generate the artifacts that will be required in the future to start working on the homogeneisation of the lists of public services that are provided by municipalities in Spain.
+This repository puts together all the work done during the CLARITY project (http://clarity-csa.eu/) Sprint Week in December 2016 on the work proposed by the Zaragoza city council on the usage of their open dataset (and API) about public services. Our aim has been to generate the artifacts that will be required in the future to start working on the homogeneisation of the lists of public services that are provided by municipalities in Spain.
 
 ### Input material ###
 
