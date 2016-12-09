@@ -33,3 +33,4 @@ Some initial inspirational examples are also provided here:
  * http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/servicio/tipo-agente 
  * http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio 
  * http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/servicio 
+* Demo at http://clarity.oeg-upm.net/
