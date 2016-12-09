@@ -14,7 +14,8 @@ This README would normally document whatever steps are necessary to get your app
   * Documentation: https://rawgit.com/opencitydata/sector-publico-servicio/master/OnToology/cpsvap.owl/documentation/index-en.html
   * Evaluation Result: https://rawgit.com/opencitydata/sector-publico-servicio/master/OnToology/cpsvap.owl/evaluation/oopsEval.html
   * https://github.com/opencitydata/sector-publico-servicio
-  * http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/servicio/tipo-agente
+  * Types of Person: http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/servicio/tipo-agente
+  * Types of Service: http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio
   
 * seeAlso: https://servicemap.hel.fi/
 * seeAlso: http://standards.esd.org.uk/?uri=list%2FenglishAndWelshServices&tab=details
