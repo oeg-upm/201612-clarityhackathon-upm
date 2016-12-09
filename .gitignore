@@ -14,3 +14,4 @@ app/.classpath
 app/.project
 app/.settings/org.eclipse.jdt.core.prefs
 app/.settings/org.eclipse.m2e.core.prefs
+/eGov/target/

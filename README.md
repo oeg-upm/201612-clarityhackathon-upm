@@ -5,7 +5,7 @@ This README would normally document whatever steps are necessary to get your app
 ### What is this repository for? ###
 
 * Quick summary
-* datos tramites en JSON: https://www.zaragoza.es/sede/servicio/tramite.json
+* datos tramites en JSON: https://www.zaragoza.es/sede/servicio/tramite.json . In order to page them, you can use something like https://www.zaragoza.es/sede/servicio/tramite.json?start=120&rows=10
 * datos tramites en JSON-LD: https://www.zaragoza.es/sede/servicio/tramite.jsonld
 * ontologia: https://github.com/opencitydata/sector-publico-servicio
 * seeAlso: https://servicemap.hel.fi/
