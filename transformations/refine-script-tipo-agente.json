@@ -198,6 +198,18 @@
                       "rdfTypes": [],
                       "links": []
                     }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+                    "curie": "skos:hasTopConcept",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "label-uri",
+                      "rdfTypes": [],
+                      "links": []
+                    }
                   }
                 ]
               }
