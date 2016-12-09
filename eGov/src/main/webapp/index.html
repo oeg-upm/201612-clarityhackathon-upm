@@ -2,17 +2,17 @@
 <html>
     <head>
         <title>Clarity eGov pilot</title>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="favicon.png">		 
-        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/cerulean/bootstrap.min.css" rel="stylesheet"> <!-- flatly, journal, cerulean -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
-        <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-        <!-- leaflet page http://leafletjs.com/examples/quick-start/ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- journal -->
+        <link rel="icon" type="image/ico" href="favicon.ico"/>
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/cerulean/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.2.0/jquery.bootgrid.min.css">		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.2.0/jquery.bootgrid.min.js"></script>
+        
         
         <style>
             #map { height: 300px; }
@@ -24,13 +24,21 @@
             </div>
             <div class="col-md-10">
                 <div class="page-header">
-                    <h1>Clarity eGov pilot</h1>
-                    <h3>Clarity eGov pilot made by UPM at Dec'16 Sprint</h3>
+                    <div><img src="logo2.jpg" align="left" style="padding-right: 80px;"/>
+                        <h1>Catalog of city services</h1></div>
+
                 </div>
                 <div class="panel-body">
+                    <p>Clarity eGov pilot made by UPM at Dec'16 Sprint of the <a href="">Clarity</a> project. 
+                        This website shows the services offered by the municipality of Zaragoza.</p>
+                    <table id="grid-data" class="table table-condensed table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th data-column-id="resource" data-formatter="link" data-order="desc">Services</th>
+                            </tr>
+                        </thead>
+                    </table>	
 
-                    <div id="map"></div>
-                    <div id="test"></div>
                 </div>
             </div>
             <div class="col-md-1">
@@ -41,7 +49,7 @@
             <div class="container">
                 <hr/>
                 <center> 
-                    <p><small>Made by Universidad Politécnica de Madrid. <a href="http://clarity-csa.eu/">clarity</a> (Open eGovernment Services)</small></p>
+                    <p><small>This website has been made by researchers of the Universidad Politécnica de Madrid with the sole purpose of demonstrating a catalog of municipal services. 2016 <a href="http://clarity-csa.eu/">clarity</a> (Open eGovernment Services)</small></p>
                     <!-- <a href="http://delicias.dia.fi.upm.es/~vrodriguez">Research</a> -->
                     <p class="muted credit"><small>Contents in this web are offered under a <a rel="license" href="http://purl.org/NET/rdflicense/cc-by4.0">Creative Commons Attribution 4.0 Unported License</a></small></p>
                 </center>
@@ -54,7 +62,7 @@
             {
                 console.log("hola");
                 iniciodatos();
-                
+
             }
             var objeto;
             function iniciodatos()
@@ -62,33 +70,50 @@
                 var http = new XMLHttpRequest();
                 http.open("POST", "test", true); //true
                 http.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=UTF-8");
-                var params="texto=1"
+                var params = "texto=1"
                 http.send(params);
                 http.onload = function () {
                     var json = http.responseText;
                     var obj = JSON.parse(json);
-                    objeto=obj;
-                    var tam = obj.geometry.coordinates.length; 
-                    var str="";
-                    for(i=0;i<tam;i++)
+                    objeto = obj;
+                    var tam = obj.geometry.coordinates.length;
+                    var str = "";
+                    for (i = 0; i < tam; i++)
                     {
-                        str+=obj.geometry.coordinates[i]+"<br/>"
+                        str += obj.geometry.coordinates[i] + "<br/>"
                     }
-                    document.getElementById("test").innerHTML= str;
-                    iniciomap();
+                    //            document.getElementById("test").innerHTML= str;
                 }
             }
+        </script>
 
-            //ZGZ 41.65606 -0.87734
-            function iniciomap()
+
+        <script>
+            $("#grid-data").bootgrid({
+                ajax: true,
+                post: function ()
+                {
+                    /* To accumulate custom parameter with the request object 
+                     return {
+                     currenturl: window.location.href 
+                     };*/
+                },
+                url: getContexto(),
+                formatters: {
+                    "link": function (column, row)
+                    {
+                        return "<a href=\"" + row.resourceurl + "\">" + row.resource + "</a>";
+                    }
+                }
+            });
+            function getContexto()
             {
-                var map = L.map("map").setView([41.65606, -0.87734], 14);
-                console.log(objeto.type);
-                L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-                var marker1 = L.marker([objeto.geometry.coordinates[0], objeto.geometry.coordinates[1]]).addTo(map);
-                marker1.bindPopup(objeto.properties.name).openPopup();
+                var contextoserver = "http://localhost:8080/eGov";
+                var url = contextoserver + "/services";
+                return url;
             }
 
-        </script>
+
+        </script>        
     </body>
 </html>
