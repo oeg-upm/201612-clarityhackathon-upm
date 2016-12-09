@@ -33,25 +33,3 @@ Some initial inspirational examples are also provided here:
  * http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/servicio/tipo-agente 
  * http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio 
  * http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/servicio 
- 
-
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
