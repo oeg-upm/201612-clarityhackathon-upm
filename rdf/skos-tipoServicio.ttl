@@ -1,0 +1,1222 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov-o: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-vial> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> a skos:ConceptScheme , prov-o:Entity ;
+	dcterms:title "Clasificación de tipos de servicios públicos"@es ;
+	dcterms:creator "Oscar Corcho (Universidad Politécnica de Madrid)" , "Freddy Priyatna (Universidad Politécnica de Madrid)" , "Idafen Santana (Universidad Politécnica de Madrid)" , "Víctor Rodríguez-Doncel (Universidad Politécnica de Madrid)" ;
+	dcterms:date "2016-12-09"^^xsd:date ;
+	prov-o:wasAttributedTo <http://www.linkedin.com/in/ocorcho> ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-vial> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Educación Vial"@es ;
+	skos:notation "educacion-vial" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-vial> ;
+	skos:prefLabel "Protección y Seguridad Ciudadana"@es ;
+	skos:notation "proteccion-y-seguridad-ciudadana" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-vial> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/bomberos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Bomberos"@es ;
+	skos:notation "bomberos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/bomberos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/bomberos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/sanciones-y-reclamaciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Sanciones y Reclamaciones"@es ;
+	skos:notation "sanciones-y-reclamaciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/sanciones-y-reclamaciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/sanciones-y-reclamaciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/armas> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Armas"@es ;
+	skos:notation "armas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/armas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/armas> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/informes-autorizaciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Informes, Autorizaciones..."@es ;
+	skos:notation "informes-autorizaciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/informes-autorizaciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/informes-autorizaciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/consumo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Consumo"@es ;
+	skos:notation "consumo" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/consumo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/consumo> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/emergencias-y-proteccion-civil> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Emergencias y Protección Civil"@es ;
+	skos:notation "emergencias-y-proteccion-civil" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/emergencias-y-proteccion-civil> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/emergencias-y-proteccion-civil> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/museo-de-los-bomberos-y-del-fuego> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Museo de los Bomberos y del Fuego"@es ;
+	skos:notation "museo-de-los-bomberos-y-del-fuego" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/museo-de-los-bomberos-y-del-fuego> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/museo-de-los-bomberos-y-del-fuego> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/animales> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Animales"@es ;
+	skos:notation "animales" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/animales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/animales> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-seguridad-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-y-subvenciones> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-y-subvenciones> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Ayudas y subvenciones"@es ;
+	skos:notation "ayudas-y-subvenciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-y-subvenciones> ;
+	skos:prefLabel "Asociación y Participación Ciudadana"@es ;
+	skos:notation "asociacion-y-participacion-ciudadana" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-y-subvenciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cursos-y-actividades> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Cursos y Actividades"@es ;
+	skos:notation "cursos-y-actividades" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cursos-y-actividades> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cursos-y-actividades> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cooperacion-y-desarrollo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Cooperación y Desarrollo"@es ;
+	skos:notation "cooperacion-y-desarrollo" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cooperacion-y-desarrollo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cooperacion-y-desarrollo> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacionismo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Asociacionismo"@es ;
+	skos:notation "asociacionismo" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacionismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacionismo> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/reserva-de-espacios> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Reserva de Espacios"@es ;
+	skos:notation "reserva-de-espacios" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/reserva-de-espacios> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/reserva-de-espacios> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/voluntariado> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Voluntariado"@es ;
+	skos:notation "voluntariado" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/voluntariado> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/voluntariado> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/censo-y-elecciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Censo y elecciones"@es ;
+	skos:notation "censo-y-elecciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/censo-y-elecciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/censo-y-elecciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asociacion-y-participacion-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/participacion-ciudadana> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/participacion-ciudadana> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Participación Ciudadana"@es ;
+	skos:notation "participacion-ciudadana" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/participacion-ciudadana> ;
+	skos:prefLabel "Ayudas Económicas y Subvenciones"@es ;
+	skos:notation "ayudas-economicas-y-subvenciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/participacion-ciudadana> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/empresas> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Empresas"@es ;
+	skos:notation "empresas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/empresas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/empresas> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/accion-social> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Acción Social"@es ;
+	skos:notation "accion-social" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/accion-social> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/accion-social> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/consumo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/consumo> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/vivienda> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Vivienda"@es ;
+	skos:notation "vivienda" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/vivienda> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/vivienda> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cultura-y-ocio> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Educación, Cultura y Ocio"@es ;
+	skos:notation "educacion-cultura-y-ocio" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cultura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cultura-y-ocio> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Medio Ambiente"@es ;
+	skos:notation "medio-ambiente" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/padron--registro-y-datos-personales> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/padron--registro-y-datos-personales> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Padrón , Registro y Datos Personales"@es ;
+	skos:notation "padron--registro-y-datos-personales" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/padron--registro-y-datos-personales> ;
+	skos:prefLabel "Asuntos Personales"@es ;
+	skos:notation "asuntos-personales" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/padron--registro-y-datos-personales> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-adicionales-vivienda> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Servicios Adicionales Vivienda"@es ;
+	skos:notation "servicios-adicionales-vivienda" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-adicionales-vivienda> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-adicionales-vivienda> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicio-de-asesorias> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Servicio de Asesorias"@es ;
+	skos:notation "servicio-de-asesorias" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicio-de-asesorias> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicio-de-asesorias> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/familia> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Familia"@es ;
+	skos:notation "familia" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/familia> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/familia> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/consumo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/consumo> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/prevencion-y-salud> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Prevención y Salud"@es ;
+	skos:notation "prevencion-y-salud" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/prevencion-y-salud> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/prevencion-y-salud> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/carnes-tarjetas-y-abonos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Carnés, Tarjetas y Abonos"@es ;
+	skos:notation "carnes-tarjetas-y-abonos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/carnes-tarjetas-y-abonos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/carnes-tarjetas-y-abonos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/extranjeros> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Extranjeros"@es ;
+	skos:notation "extranjeros" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/extranjeros> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/extranjeros> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-funerarios> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Derechos funerarios"@es ;
+	skos:notation "derechos-funerarios" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-funerarios> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-funerarios> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/formacion-y-empleo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Formación y Empleo"@es ;
+	skos:notation "formacion-y-empleo" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/formacion-y-empleo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/formacion-y-empleo> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/compra-vivenda> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Compra Vivenda"@es ;
+	skos:notation "compra-vivenda" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/compra-vivenda> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/compra-vivenda> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/rehabilitacion-vivienda> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Rehabilitación Vivienda"@es ;
+	skos:notation "rehabilitacion-vivienda" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/rehabilitacion-vivienda> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/rehabilitacion-vivienda> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tarjeta-ciudadana> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Tarjeta Ciudadana"@es ;
+	skos:notation "tarjeta-ciudadana" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tarjeta-ciudadana> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tarjeta-ciudadana> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-modificacion-de-datos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Protección y Modificación de Datos"@es ;
+	skos:notation "proteccion-y-modificacion-de-datos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-modificacion-de-datos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/proteccion-y-modificacion-de-datos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-adicionales> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Servicios Adicionales"@es ;
+	skos:notation "servicios-adicionales" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-adicionales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-adicionales> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/alquiler-de-vivienda> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Alquiler de Vivienda"@es ;
+	skos:notation "alquiler-de-vivienda" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/alquiler-de-vivienda> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/alquiler-de-vivienda> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/asuntos-personales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/limpieza-urbana-y-recogida-de-residuos> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/limpieza-urbana-y-recogida-de-residuos> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Limpieza Urbana y Recogida de Residuos"@es ;
+	skos:notation "limpieza-urbana-y-recogida-de-residuos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/limpieza-urbana-y-recogida-de-residuos> ;
+	skos:prefLabel "Tráfico y Vía Pública"@es ;
+	skos:notation "trafico-y-via-publica" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/limpieza-urbana-y-recogida-de-residuos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/multas-sanciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Multas, Sanciones"@es ;
+	skos:notation "multas-sanciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/multas-sanciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/multas-sanciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/señalizacion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Señalización"@es ;
+	skos:notation "señalizacion" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/señalizacion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/señalizacion> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-vial> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-vial> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/mobiliario-urbano> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Mobiliario urbano"@es ;
+	skos:notation "mobiliario-urbano" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/mobiliario-urbano> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/mobiliario-urbano> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/circulacion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Circulación"@es ;
+	skos:notation "circulacion" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/circulacion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/circulacion> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/reserva-de-espacios> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/reserva-de-espacios> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/transporte-publico> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Transporte Público"@es ;
+	skos:notation "transporte-publico" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/transporte-publico> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/transporte-publico> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/policia-local> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Policia Local"@es ;
+	skos:notation "policia-local" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/policia-local> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/policia-local> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/badenes> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Badenes"@es ;
+	skos:notation "badenes" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/badenes> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/badenes> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ocupacion-en-la-via> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Ocupación en la vía"@es ;
+	skos:notation "ocupacion-en-la-via" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ocupacion-en-la-via> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ocupacion-en-la-via> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/otros-uso-del-espacio-publico> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Otros uso del espacio público"@es ;
+	skos:notation "otros-uso-del-espacio-publico" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/otros-uso-del-espacio-publico> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/otros-uso-del-espacio-publico> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/autorizaciones-especiales> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Autorizaciones Especiales"@es ;
+	skos:notation "autorizaciones-especiales" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/autorizaciones-especiales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/autorizaciones-especiales> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/objetos-perdidos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Objetos Perdidos"@es ;
+	skos:notation "objetos-perdidos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/objetos-perdidos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/objetos-perdidos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/taxis> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Taxis"@es ;
+	skos:notation "taxis" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/taxis> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/taxis> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tomas-de-agua-y-vertidos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Tomas de Agua y Vertidos"@es ;
+	skos:notation "tomas-de-agua-y-vertidos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tomas-de-agua-y-vertidos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tomas-de-agua-y-vertidos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/estacionamiento-reserva-de-espacios> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Estacionamiento, Reserva de Espacios"@es ;
+	skos:notation "estacionamiento-reserva-de-espacios" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/estacionamiento-reserva-de-espacios> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/estacionamiento-reserva-de-espacios> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/circulacion-y-aparcamiento> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Circulación y Aparcamiento"@es ;
+	skos:notation "circulacion-y-aparcamiento" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/circulacion-y-aparcamiento> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/circulacion-y-aparcamiento> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trafico-y-via-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-de-actividades-economicas--iae-> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-de-actividades-economicas--iae-> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Impuesto de Actividades Económicas -IAE-"@es ;
+	skos:notation "impuesto-de-actividades-economicas--iae-" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-de-actividades-economicas--iae-> ;
+	skos:prefLabel "Tributos"@es ;
+	skos:notation "tributos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-de-actividades-economicas--iae-> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/autoliquidaciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Autoliquidaciones"@es ;
+	skos:notation "autoliquidaciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/autoliquidaciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/autoliquidaciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-sobre-el-incremento-del-valor-del-suelo-urbano--plusvalia-> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Impuesto sobre el Incremento del Valor del Suelo Urbano -Plusvalía-"@es ;
+	skos:notation "impuesto-sobre-el-incremento-del-valor-del-suelo-urbano--plusvalia-" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-sobre-el-incremento-del-valor-del-suelo-urbano--plusvalia-> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-sobre-el-incremento-del-valor-del-suelo-urbano--plusvalia-> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-de-vehiculos-de-traccion-mecanica-ivtm> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Impuesto de Vehículos de Tracción Mecánica (IVTM)"@es ;
+	skos:notation "impuesto-de-vehiculos-de-traccion-mecanica-ivtm" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-de-vehiculos-de-traccion-mecanica-ivtm> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-de-vehiculos-de-traccion-mecanica-ivtm> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-de-bienes-inmuebles--ibi-> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Impuesto de Bienes Inmuebles -IBI-"@es ;
+	skos:notation "impuesto-de-bienes-inmuebles--ibi-" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-de-bienes-inmuebles--ibi-> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/impuesto-de-bienes-inmuebles--ibi-> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ingresos-urbanisticos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Ingresos Urbanísticos"@es ;
+	skos:notation "ingresos-urbanisticos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ingresos-urbanisticos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ingresos-urbanisticos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/gestion-tributaria> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Gestión Tributaria"@es ;
+	skos:notation "gestion-tributaria" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/gestion-tributaria> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/gestion-tributaria> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/pagos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Pagos"@es ;
+	skos:notation "pagos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/pagos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/pagos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cobros> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Cobros"@es ;
+	skos:notation "cobros" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cobros> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cobros> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tributos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/control-de-aguas> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/control-de-aguas> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Control de Aguas"@es ;
+	skos:notation "control-de-aguas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/control-de-aguas> ;
+	skos:prefLabel "Agua"@es ;
+	skos:notation "agua" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/control-de-aguas> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/alta> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Alta"@es ;
+	skos:notation "alta" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/alta> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/alta> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/recursos-didacticos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Recursos Didacticos"@es ;
+	skos:notation "recursos-didacticos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/recursos-didacticos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/recursos-didacticos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/baja> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Baja"@es ;
+	skos:notation "baja" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/baja> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/baja> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/consumo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/consumo> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/instalaciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Instalaciones"@es ;
+	skos:notation "instalaciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/instalaciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/instalaciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/bonificaciones-y-coeficientes> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Bonificaciones y Coeficientes"@es ;
+	skos:notation "bonificaciones-y-coeficientes" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/bonificaciones-y-coeficientes> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/bonificaciones-y-coeficientes> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/devolucion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Devolución"@es ;
+	skos:notation "devolucion" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/devolucion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/devolucion> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/agua> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cursos-y-actividades> ;
+	skos:prefLabel "Educación, Cutura y Ocio"@es ;
+	skos:notation "educacion-cutura-y-ocio" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cursos-y-actividades> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/matricula-en-centros-educativos-y-formativos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Matrícula en Centros Educativos y Formativos"@es ;
+	skos:notation "matricula-en-centros-educativos-y-formativos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/matricula-en-centros-educativos-y-formativos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/matricula-en-centros-educativos-y-formativos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-vial> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-vial> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-becas-y-subvenciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Ayudas, becas y subvenciones"@es ;
+	skos:notation "ayudas-becas-y-subvenciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-becas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-becas-y-subvenciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/visitas-e-itinerarios> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Visitas e itinerarios"@es ;
+	skos:notation "visitas-e-itinerarios" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/visitas-e-itinerarios> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/visitas-e-itinerarios> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/museos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Museos"@es ;
+	skos:notation "museos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/museos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/museos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/turismo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Turismo"@es ;
+	skos:notation "turismo" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/turismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/turismo> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/recursos-didacticos> skos:prefLabel "Recursos Didácticos"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/recursos-didacticos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/recursos-didacticos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/archivos---bibliotecas---hemeroteca--centros-de-documentacion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Archivos - Bibliotecas - Hemeroteca- Centros de Documentación"@es ;
+	skos:notation "archivos---bibliotecas---hemeroteca--centros-de-documentacion" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/archivos---bibliotecas---hemeroteca--centros-de-documentacion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/archivos---bibliotecas---hemeroteca--centros-de-documentacion> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/carnes-tarjetas-y-abonos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/carnes-tarjetas-y-abonos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/educacion-cutura-y-ocio> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tramitacion-electronica> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tramitacion-electronica-identificacion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tramitacion-electronica> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Tramitación Electrónica"@es ;
+	skos:notation "tramitacion-electronica" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tramitacion-electronica-identificacion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tramitacion-electronica> ;
+	skos:prefLabel "Tramitación Electrónica: Identificación"@es ;
+	skos:notation "tramitacion-electronica-identificacion" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tramitacion-electronica> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tramitacion-electronica-identificacion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/planeamiento> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/planeamiento> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Planeamiento"@es ;
+	skos:notation "planeamiento" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/planeamiento> ;
+	skos:prefLabel "Urbanismo"@es ;
+	skos:notation "urbanismo" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/planeamiento> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/autoliquidaciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/autoliquidaciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<actividades-no-clasificadas:-urbanisticas-yo-apertura> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Actividades no Clasificadas: Urbanísticas y/o Apertura"@es ;
+	skos:notation "actividades-no-clasificadas:-urbanisticas-yo-apertura" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <actividades-no-clasificadas:-urbanisticas-yo-apertura> .
+
+<actividades-no-clasificadas:-urbanisticas-yo-apertura> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/obras-mayores> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Obras Mayores"@es ;
+	skos:notation "obras-mayores" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/obras-mayores> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/obras-mayores> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/atencion-ciudadana--informacion-y-documentacion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Atención ciudadana / Información y documentación"@es ;
+	skos:notation "atencion-ciudadana--informacion-y-documentacion" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/atencion-ciudadana--informacion-y-documentacion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/atencion-ciudadana--informacion-y-documentacion> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/actividades-ambientales-clasificadas> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Actividades Ambientales Clasificadas"@es ;
+	skos:notation "actividades-ambientales-clasificadas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/actividades-ambientales-clasificadas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/actividades-ambientales-clasificadas> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-adicionales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-adicionales> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/edificios> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Edificios"@es ;
+	skos:notation "edificios" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/edificios> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/edificios> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/badenes> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/badenes> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/planos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Planos"@es ;
+	skos:notation "planos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/planos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/planos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo-afectados-por-la-ordenanza-municipal-de-medios-de-intervencion-en-la-actividad-urbanistica--miau-> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Urbanismo afectados por la Ordenanza Municipal de Medios de Intervención en la Actividad Urbanística. -MIAU-"@es ;
+	skos:notation "urbanismo-afectados-por-la-ordenanza-municipal-de-medios-de-intervencion-en-la-actividad-urbanistica--miau-" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo-afectados-por-la-ordenanza-municipal-de-medios-de-intervencion-en-la-actividad-urbanistica--miau-> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo-afectados-por-la-ordenanza-municipal-de-medios-de-intervencion-en-la-actividad-urbanistica--miau-> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/obras-menores-vallas-y-andamios> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Obras Menores, Vallas y Andamios"@es ;
+	skos:notation "obras-menores-vallas-y-andamios" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/obras-menores-vallas-y-andamios> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/obras-menores-vallas-y-andamios> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/urbanismo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-domiciliarios> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-domiciliarios> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Servicios Domiciliarios"@es ;
+	skos:notation "servicios-domiciliarios" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-domiciliarios> ;
+	skos:prefLabel "Derechos Sociales"@es ;
+	skos:notation "derechos-sociales" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicios-domiciliarios> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cursos-y-actividades> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cursos-y-actividades> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/insercion-sociolaboral> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Inserción Sociolaboral"@es ;
+	skos:notation "insercion-sociolaboral" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/insercion-sociolaboral> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/insercion-sociolaboral> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/igualdad-de-genero> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Igualdad de Género"@es ;
+	skos:notation "igualdad-de-genero" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/igualdad-de-genero> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/igualdad-de-genero> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/subvenciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Subvenciones"@es ;
+	skos:notation "subvenciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/subvenciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicio-de-asesorias> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/servicio-de-asesorias> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/multiculturalidad> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Multiculturalidad"@es ;
+	skos:notation "multiculturalidad" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/multiculturalidad> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/multiculturalidad> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/albergue-municipal> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Albergue Municipal"@es ;
+	skos:notation "albergue-municipal" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/albergue-municipal> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/albergue-municipal> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/atencion-a-la-discapacidad-y-la-autonomia-personal> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Atención a la Discapacidad y la Autonomía Personal"@es ;
+	skos:notation "atencion-a-la-discapacidad-y-la-autonomia-personal" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/atencion-a-la-discapacidad-y-la-autonomia-personal> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/atencion-a-la-discapacidad-y-la-autonomia-personal> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/informacion-y-documentacion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Información Y Documentación"@es ;
+	skos:notation "informacion-y-documentacion" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/informacion-y-documentacion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/informacion-y-documentacion> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/prestaciones-economicas-y-bonificaciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Prestaciones Económicas y Bonificaciones"@es ;
+	skos:notation "prestaciones-economicas-y-bonificaciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/prestaciones-economicas-y-bonificaciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/prestaciones-economicas-y-bonificaciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/promocion-de-la-salud> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Promoción de la Salud"@es ;
+	skos:notation "promocion-de-la-salud" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/promocion-de-la-salud> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/promocion-de-la-salud> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/menores-en-riesgo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Menores en Riesgo"@es ;
+	skos:notation "menores-en-riesgo" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/menores-en-riesgo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/menores-en-riesgo> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/atencion-a-la-dependencia> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Atención a la Dependencia"@es ;
+	skos:notation "atencion-a-la-dependencia" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/atencion-a-la-dependencia> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/atencion-a-la-dependencia> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/derechos-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/formacion> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trabajo-y-empleo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/formacion> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Formación"@es ;
+	skos:notation "formacion" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trabajo-y-empleo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/formacion> ;
+	skos:prefLabel "Trabajo y Empleo"@es ;
+	skos:notation "trabajo-y-empleo" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/formacion> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trabajo-y-empleo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/empleo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Empleo"@es ;
+	skos:notation "empleo" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trabajo-y-empleo> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/empleo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/empleo> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/trabajo-y-empleo> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/limpieza-urbana-y-recogida-de-residuos> ;
+	skos:prefLabel "Medio Ambiente y Salud Pública"@es ;
+	skos:notation "medio-ambiente-y-salud-publica" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/limpieza-urbana-y-recogida-de-residuos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/calidad-ambiental> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Calidad Ambiental"@es ;
+	skos:notation "calidad-ambiental" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/calidad-ambiental> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/calidad-ambiental> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/informacion-y-documentacion> skos:prefLabel "Información y Documentación"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/informacion-y-documentacion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/informacion-y-documentacion> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/formacion-y-educacion-ambiental> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Formación y Educación Ambiental"@es ;
+	skos:notation "formacion-y-educacion-ambiental" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/formacion-y-educacion-ambiental> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/formacion-y-educacion-ambiental> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-y-subvenciones> skos:prefLabel "Ayudas y Subvenciones"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-y-subvenciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/animales-seguridad-alimentaria-y-control-de-aguas> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Animales, Seguridad Alimentaria y Control de Aguas"@es ;
+	skos:notation "animales-seguridad-alimentaria-y-control-de-aguas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/animales-seguridad-alimentaria-y-control-de-aguas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/animales-seguridad-alimentaria-y-control-de-aguas> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/espacios-verdes> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Espacios Verdes"@es ;
+	skos:notation "espacios-verdes" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/espacios-verdes> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/espacios-verdes> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/medio-ambiente-y-salud-publica> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/deporte> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/deporte> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cursos-y-actividades> ;
+	skos:prefLabel "Deporte"@es ;
+	skos:notation "deporte" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/cursos-y-actividades> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/deporte> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/deporte> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/reserva-de-espacios> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/reserva-de-espacios> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/deporte> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/deporte> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/carnes-tarjetas-y-abonos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/carnes-tarjetas-y-abonos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/deporte> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/alquiler-y-reserva-de-instalaciones> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/alquiler-y-reserva-de-instalaciones> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Alquiler y Reserva de Instalaciones"@es ;
+	skos:notation "alquiler-y-reserva-de-instalaciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/alquiler-y-reserva-de-instalaciones> ;
+	skos:prefLabel "Tipo de Trámites y Gestiones"@es ;
+	skos:notation "tipo-de-tramites-y-gestiones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/alquiler-y-reserva-de-instalaciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/duplicado-de-documentos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Duplicado de Documentos"@es ;
+	skos:notation "duplicado-de-documentos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/duplicado-de-documentos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/duplicado-de-documentos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/recursos-administrativos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Recursos Administrativos"@es ;
+	skos:notation "recursos-administrativos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/recursos-administrativos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/recursos-administrativos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/sanciones-y-reclamaciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/sanciones-y-reclamaciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/ayudas-economicas-y-subvenciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/justificantes-certificados-e-informes> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Justificantes, Certificados e Informes"@es ;
+	skos:notation "justificantes-certificados-e-informes" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/justificantes-certificados-e-informes> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/justificantes-certificados-e-informes> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/licencias-y-autorizaciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Licencias y Autorizaciones"@es ;
+	skos:notation "licencias-y-autorizaciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/licencias-y-autorizaciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/licencias-y-autorizaciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/bajas-y-exenciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Bajas y Exenciones"@es ;
+	skos:notation "bajas-y-exenciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/bajas-y-exenciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/bajas-y-exenciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/altas-inscripciones-y-solicitudes-de-plazas> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Altas, Inscripciones y Solicitudes de Plazas"@es ;
+	skos:notation "altas-inscripciones-y-solicitudes-de-plazas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/altas-inscripciones-y-solicitudes-de-plazas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/altas-inscripciones-y-solicitudes-de-plazas> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/pagos-y-devoluciones> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Pagos y Devoluciones"@es ;
+	skos:notation "pagos-y-devoluciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/pagos-y-devoluciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/pagos-y-devoluciones> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/carnes-tarjetas-y-abonos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/carnes-tarjetas-y-abonos> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/solicitud-de-informacion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio> ;
+	skos:prefLabel "Solicitud de Información"@es ;
+	skos:notation "solicitud-de-informacion" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> skos:narrower <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/solicitud-de-informacion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/solicitud-de-informacion> skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio/tipo-de-tramites-y-gestiones> .
