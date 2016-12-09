@@ -10,8 +10,9 @@ This README would normally document whatever steps are necessary to get your app
 * datos tramites en CSV (en HTML y Markdown): 
  * curl -X GET --header "Accept: text/csv" "https://www.zaragoza.es/sede/servicio/tramite?rf=html&results_only=false&rows=800"
  * curl -X GET --header "Accept: text/csv" "https://www.zaragoza.es/sede/servicio/tramite?rf=markdown&results_only=false&rows=800&fl=id,title,descabre"
-* ontologia: https://github.com/opencitydata/sector-publico-servicio
-  * http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio
+* ontologia: 
+  * https://rawgit.com/opencitydata/sector-publico-servicio/master/OnToology/cpsvap.owl/documentation/index-en.html
+  * https://github.com/opencitydata/sector-publico-servicio
   * http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/servicio/tipo-agente
 * seeAlso: https://servicemap.hel.fi/
 * seeAlso: http://standards.esd.org.uk/?uri=list%2FenglishAndWelshServices&tab=details
