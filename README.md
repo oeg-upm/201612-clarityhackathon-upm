@@ -11,8 +11,10 @@ This README would normally document whatever steps are necessary to get your app
 * ontologia: https://github.com/opencitydata/sector-publico-servicio
 * seeAlso: https://servicemap.hel.fi/
 * seeAlso: http://standards.esd.org.uk/?uri=list%2FenglishAndWelshServices&tab=details
+
+* Obtaining "temas and subtemas" (topics and subtopics): https://www.zaragoza.es/buscador/select?q=*:*%20AND%20-tipocontenido_s:estatico%20AND%20category:Tr\u00e1mites&rows=800&fl=temas_smultiple,subtemas_smultiple
+* Obtaining "dirigidoA" (agents): https://www.zaragoza.es/buscador/select?q=*:*%20AND%20-tipocontenido_s:estatico%20AND%20category:Tr\u00e1mites&rows=800&fl=dirigidoa_smultiple
 * Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 
 ### How do I get set up? ###
