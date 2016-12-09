@@ -1,0 +1,230 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov-o: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/acreedores-del-ayuntamiento> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> a skos:ConceptScheme , prov-o:Entity ;
+	dcterms:title "Clasificación de tipos de agente a los que puede ir dirigido un servicio público"@es ;
+	dcterms:creator "Oscar Corcho (Universidad Politécnica de Madrid)" , "Freddy Priyatna (Universidad Politécnica de Madrid)" , "Idafen Santana (Universidad Politécnica de Madrid)" , "Víctor Rodríguez-Doncel (Universidad Politécnica de Madrid)" ;
+	dcterms:date "2016-12-09"^^xsd:date ;
+	prov-o:wasAttributedTo <http://www.linkedin.com/in/ocorcho> ;
+	skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/acreedores-del-ayuntamiento> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/acreedores-del-ayuntamiento> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Acreedores del Ayuntamiento"@es ;
+	skos:notation "acreedores-del-ayuntamiento" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/asociaciones> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/asociaciones> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/asociaciones> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Asociaciones"@es ;
+	skos:notation "asociaciones" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/asociaciones-juveniles> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/asociaciones-juveniles> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/asociaciones-juveniles> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Asociaciones Juveniles"@es ;
+	skos:notation "asociaciones-juveniles" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/centros-educativos> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/centros-educativos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/centros-educativos> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Centros Educativos"@es ;
+	skos:notation "centros-educativos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/clubes-deportivos> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/clubes-deportivos> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/clubes-deportivos> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Clubes Deportivos"@es ;
+	skos:notation "clubes-deportivos" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/comunidad-de-propietarios> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/comunidad-de-propietarios> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/comunidad-de-propietarios> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Comunidad de Propietarios"@es ;
+	skos:notation "comunidad-de-propietarios" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/disminuidos-psiquicos-ligeros-con-o-sin-certificado-de-iass> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/disminuidos-psiquicos-ligeros-con-o-sin-certificado-de-iass> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/disminuidos-psiquicos-ligeros-con-o-sin-certificado-de-iass> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Disminuídos Psíquicos Ligeros con o sin certificado de I.A.S.S."@es ;
+	skos:notation "disminuidos-psiquicos-ligeros-con-o-sin-certificado-de-iass" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/educadores-monitores-etc> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/educadores-monitores-etc> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/educadores-monitores-etc> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Educadores, monitores, etc."@es ;
+	skos:notation "educadores-monitores-etc" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/empresas> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/empresas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/empresas> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Empresas"@es ;
+	skos:notation "empresas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/entidades-sociales> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/entidades-sociales> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/entidades-sociales> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Entidades Sociales"@es ;
+	skos:notation "entidades-sociales" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/familias-numerosas> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/familias-numerosas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/familias-numerosas> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Familias Numerosas"@es ;
+	skos:notation "familias-numerosas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/infancia> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/infancia> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/infancia> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Infancia"@es ;
+	skos:notation "infancia" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/inmigrantes> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/inmigrantes> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/inmigrantes> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Inmigrantes"@es ;
+	skos:notation "inmigrantes" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/jovenes> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/jovenes> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/jovenes> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Jóvenes"@es ;
+	skos:notation "jovenes" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/jubilados> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/jubilados> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/jubilados> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Jubilados"@es ;
+	skos:notation "jubilados" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/minorias-etnicas> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/minorias-etnicas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/minorias-etnicas> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Minorías Étnicas"@es ;
+	skos:notation "minorias-etnicas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/mujer> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/mujer> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/mujer> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Mujer"@es ;
+	skos:notation "mujer" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/parados> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/parados> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/parados> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Parados"@es ;
+	skos:notation "parados" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-con-dificultades-de-insercion> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-con-dificultades-de-insercion> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-con-dificultades-de-insercion> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Personas con Dificultades de Inserción"@es ;
+	skos:notation "personas-con-dificultades-de-insercion" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-con-discapacidad> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-con-discapacidad> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-con-discapacidad> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Personas con Discapacidad"@es ;
+	skos:notation "personas-con-discapacidad" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-fisicas> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-fisicas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-fisicas> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Personas Físicas"@es ;
+	skos:notation "personas-fisicas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-juridicas> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-juridicas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-juridicas> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Personas Jurídicas"@es ;
+	skos:notation "personas-juridicas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-juridicas-excluidas-las-entidades-financieras> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-juridicas-excluidas-las-entidades-financieras> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-juridicas-excluidas-las-entidades-financieras> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Personas Jurídicas (excluídas las Entidades Financieras)"@es ;
+	skos:notation "personas-juridicas-excluidas-las-entidades-financieras" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-mayores> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-mayores> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/personas-mayores> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Personas Mayores"@es ;
+	skos:notation "personas-mayores" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/profesores--educadores> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/profesores--educadores> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/profesores--educadores> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Profesores / Educadores"@es ;
+	skos:notation "profesores--educadores" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/rentas-bajas> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/rentas-bajas> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/rentas-bajas> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Rentas Bajas"@es ;
+	skos:notation "rentas-bajas" .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/transeuntes> a skos:Concept .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/transeuntes> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente/transeuntes> skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-agente> ;
+	skos:prefLabel "Transeúntes"@es ;
+	skos:notation "transeuntes" .
