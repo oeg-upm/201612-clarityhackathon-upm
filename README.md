@@ -1,46 +1,36 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
-* Quick summary
-* datos tramites en JSON: https://www.zaragoza.es/sede/servicio/tramite.json . In order to page them, you can use something like https://www.zaragoza.es/sede/servicio/tramite.json?start=120&rows=10
-* datos tramites en JSON-LD: https://www.zaragoza.es/sede/servicio/tramite.jsonld
-* datos tramites en CSV (en HTML y Markdown): 
+This repository puts together all the work done during the CLARITY project (http://clarity-csa.eu/) Sprint Week in December 2016 on the work proposed by the Zaragoza city council on the usage of their open dataset (and API) about public services. Our aim has been to generate the artifacts that will be required in the future to start working on the homogeneisation of the lists of public services that are provided by municipalities in Spain.
+
+### Input material ###
+
+We have started with the open material that is made available by the Zaragoza city council in relation to the public services that they offer, namely:
+
+* JSON data about their public services: https://www.zaragoza.es/sede/servicio/tramite.json 
+ * Such a call does not give access to all the data, but only to 50 rows. In order to page them, you can use something like https://www.zaragoza.es/sede/servicio/tramite.json?start=120&rows=10, or specify directly that the number of rows should be equal to 800 (since they have less than 800 services available)
+* JSON-LD data about their public services (this work will be improving in the future, thanks to the work done over this sprint): https://www.zaragoza.es/sede/servicio/tramite.jsonld
+* CSV data about their public services (in HTML and Markdown): 
  * curl -X GET --header "Accept: text/csv" "https://www.zaragoza.es/sede/servicio/tramite?rf=html&results_only=false&rows=800"
- * curl -X GET --header "Accept: text/csv" "https://www.zaragoza.es/sede/servicio/tramite?rf=markdown&results_only=false&rows=800&fl=id,title,descabre"
-* ontologia: 
+ * curl -X GET --header "Accept: text/csv" "https://www.zaragoza.es/sede/servicio/tramite?rf=markdown&results_only=false&rows=800&fl=id,title,descabre" (not that this one does not seem to be working right now - this has been reported to the corresponding people, see https://github.com/zaragoza-sedeelectronica/zaragoza-sedeelectronica.github.io/issues/46)
+* XML files obtained from the SOLR service
+ * Obtaining "temas and subtemas" (topics and subtopics): https://www.zaragoza.es/buscador/select?q=*:*%20AND%20-tipocontenido_s:estatico%20AND%20category:Tr\u00e1mites&rows=800&fl=temas_smultiple,subtemas_smultiple
+ * Obtaining "dirigidoA" (agents): https://www.zaragoza.es/buscador/select?q=*:*%20AND%20-tipocontenido_s:estatico%20AND%20category:Tr\u00e1mites&rows=800&fl=dirigidoa_smultiple
+
+
+Some initial inspirational examples are also provided here:
+* Service Map in Helsinki: https://servicemap.hel.fi/
+* Codelists, including a list of Local Government public services, in the United Kingdom: http://standards.esd.org.uk/?uri=list%2FenglishAndWelshServices&tab=details
+
+
+### Generated material ###
+* CPSV-AP Ontology formalised in OWL and translated into Spanish: 
   * Documentation: https://rawgit.com/opencitydata/sector-publico-servicio/master/OnToology/cpsvap.owl/documentation/index-en.html
-  * Evaluation Result: https://rawgit.com/opencitydata/sector-publico-servicio/master/OnToology/cpsvap.owl/evaluation/oopsEval.html
+  * Ontology evaluation results: https://rawgit.com/opencitydata/sector-publico-servicio/master/OnToology/cpsvap.owl/evaluation/oopsEval.html
   * https://github.com/opencitydata/sector-publico-servicio
-  * Types of Person: http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/servicio/tipo-agente
-  * Types of Service: http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio
-  
-* seeAlso: https://servicemap.hel.fi/
-* seeAlso: http://standards.esd.org.uk/?uri=list%2FenglishAndWelshServices&tab=details
-
-* Obtaining "temas and subtemas" (topics and subtopics): https://www.zaragoza.es/buscador/select?q=*:*%20AND%20-tipocontenido_s:estatico%20AND%20category:Tr\u00e1mites&rows=800&fl=temas_smultiple,subtemas_smultiple
-* Obtaining "dirigidoA" (agents): https://www.zaragoza.es/buscador/select?q=*:*%20AND%20-tipocontenido_s:estatico%20AND%20category:Tr\u00e1mites&rows=800&fl=dirigidoa_smultiple
-* Version
-
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* Several SKOS thesauri have been generated (they will be maintained at the https://github.com/opencitydata/sector-publico-servicio repository
+ * http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/servicio/tipo-agente 
+ * http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/servicio/tipo-servicio 
+ * http://vocab.linkeddata.es/page/datosabiertos/kos/sector-publico/servicio 
+* Demo at http://clarity.oeg-upm.net/
